@@ -1,4 +1,4 @@
-# Project Name
+0# Project Name
 
 A modern and responsive web application built using HTML, CSS, JavaScript, and Python.
 
@@ -9,6 +9,7 @@ A modern and responsive web application built using HTML, CSS, JavaScript, and P
 * Interactive JavaScript Functionality
 * Python Backend Support
 * Easy to Customize
+eazy to implement
 * Beginner Friendly Project Structure
 
 ## 🛠️ Technologies Used
@@ -26,6 +27,7 @@ A modern and responsive web application built using HTML, CSS, JavaScript, and P
 ## 📂 Project Structure
 
 ```text
+
 project/
 │
 ├── index.html
@@ -120,9 +122,6 @@ This project is licensed under the MIT License.
 ## 👨‍💻 Author
 
 **Dipak**
-
-
-
 
 Computer Engineering Student
 
