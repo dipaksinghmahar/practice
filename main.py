@@ -7,7 +7,7 @@ class Student:
         print(f"Name: {self.name}")
         print(f"Age: {self.age}")
 
-
+a=int(input("enter the value"))
 student1 = Student("Dipak", 21)
 student1.display()
 
