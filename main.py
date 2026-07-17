@@ -7,9 +7,7 @@ class Student:
         print(f"Name: {self.name}")
         print(f"Age: {self.age}")
 
-a=int(input("enter the value"))
-for a in range (1,10):
-    print(a)
+
 student1 = Student("Dipak", 21)
 student1.display()
 
