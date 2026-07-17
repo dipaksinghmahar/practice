@@ -6,23 +6,7 @@ A modern and responsive web application built using HTML, CSS, JavaScript, and P
 
 * Responsive Design
 * Clean User Interface
-* Interactive JavaScript Func
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-* tionality
+* Interactive JavaScript Functionality
 * Python Backend Support
 * Easy to Customize
 eazy to implement
