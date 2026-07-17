@@ -8,6 +8,8 @@ class Student:
         print(f"Age: {self.age}")
 
 a=int(input("enter the value"))
+for a in range (1,10):
+    
 student1 = Student("Dipak", 21)
 student1.display()
 
