@@ -15,9 +15,6 @@ eazy to implement
 ## 🛠️ Technologies Used
 
 ### Frontend
-
-
-
 * HTML5
 * CSS3
 * JavaScript (ES6)
