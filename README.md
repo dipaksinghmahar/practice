@@ -3,7 +3,6 @@
 A modern and responsive web application built using HTML, CSS, JavaScript, and Python.
 
 ## 📌 Features
-
 * Responsive Design
 * Clean User Interface
 * Interactive JavaScript Functionality
@@ -23,7 +22,6 @@ eazy to implement
 * Python
 
 ## 📂 Project Structure
-
 ```text
 
 project/
