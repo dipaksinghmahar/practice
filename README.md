@@ -20,7 +20,6 @@ eazy to implement
 * JavaScript (ES6)
 
 ### Backend
-
 * Python
 
 ## 📂 Project Structure
