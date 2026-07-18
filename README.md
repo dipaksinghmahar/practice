@@ -14,8 +14,6 @@ eazy to implement
 
 ## 🛠️ Technologies Used
 
-
-
 ### Frontend
 
 
