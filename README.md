@@ -25,7 +25,7 @@ eazy to implement
 ```text
 
 project/
-│
+|
 ├── index.html
 ├── style.css
 ├── script.js
