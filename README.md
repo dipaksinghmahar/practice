@@ -1,6 +1,6 @@
 # 🚀 Project Name
 
-A modern, responsive, and beginner-friendly web application built with **HTML, CSS, JavaScript, and Python**. This project demonstrates the fundamentals of full-stack web development with a clean user interface, interactive features, and an easy-to-understand project structure.
+A modern, responsive, and beginner-friendly web application built with **HTML, CSS, JavaScript, and Python**. This project demonstrates the fundamentals of full-stack web development with a      clean user interface, interactive features, and an easy-to-understand project structure.
 
 ---
 
