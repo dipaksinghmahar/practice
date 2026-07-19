@@ -10,6 +10,8 @@ A modern, responsive, and beginner-friendly web application built with **HTML, C
 
 * 📱 Fully Responsive Design
 * 🎨 Clean and Modern User Interface
+
+* 
 * ⚡ Interactive JavaScript Functionality
 * 🐍 Python Backend Support
 * 🔧 Easy to Customize and Extend
