@@ -113,6 +113,8 @@ This project helps you understand:
 * JavaScript DOM manipulation
 * Python programming basics
 * Frontend and backend integration
+
+* 
 * Project organization and documentation
 
 ---
