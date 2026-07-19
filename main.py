@@ -1,152 +1,233 @@
-# This program contains different Python concepts like:
+# ==========================================================
+# Python Concepts Demonstration Program
+# Author : Dipak
+# Description:
+# Demonstrates:
 # 1. Class and Object
 # 2. Functions
-# 3. For Loop
-# 4. List
+# 3. Loops
+# 4. Lists
 # 5. List Comprehension
+# 6. Dictionary
+# 7. Exception Handling
+# 8. File Handling
+# ==========================================================
 
-# -----------------------------
+# -------------------------------
 # Class and Object
-# -----------------------------
+# -------------------------------
 
-# Creating a Student class
 class Student:
+    """Represents a student."""
 
-    # This constructor stores the student's information
-    def __init__(self, name, age, faculty, marks):
+    def __init__(self, name: str, age: int, faculty: str, marks: list[int]):
         self.name = name
         self.age = age
         self.faculty = faculty
         self.marks = marks
 
-    # This function prints the student's details
     def display(self):
-        print("\nStudent Details")
-        print("----------------")
-        print("Name    :", self.name)
-        print("Age     :", self.age)
-        print("Faculty :", self.faculty)
-        print("Marks   :", self.marks)
+        print("\n========== Student Details ==========")
+        print(f"Name     : {self.name}")
+        print(f"Age      : {self.age}")
+        print(f"Faculty  : {self.faculty}")
+        print(f"Marks    : {self.marks}")
 
-    # This function calculates the average marks
     def average_marks(self):
         return sum(self.marks) / len(self.marks)
 
+    def grade(self):
+        avg = self.average_marks()
 
-# Creating an object of Student class
-student1 = Student(
+        if avg >= 90:
+            return "A+"
+        elif avg >= 80:
+            return "A"
+        elif avg >= 70:
+            return "B"
+        elif avg >= 60:
+            return "C"
+        else:
+            return "Fail"
+
+
+student = Student(
     "Dipak",
     21,
     "Computer Engineering",
     [80, 85, 90, 88]
 )
 
-# Calling the display function
-student1.display()
+student.display()
 
-# Printing average marks
-print("Average Marks:", student1.average_marks())
+print(f"Average : {student.average_marks():.2f}")
+print(f"Grade   : {student.grade()}")
 
-
-# -----------------------------
+# -------------------------------
 # Functions
-# -----------------------------
+# -------------------------------
 
-# Function to add two numbers
 def add(a, b):
     return a + b
 
 
-# Function to subtract two numbers
 def subtract(a, b):
     return a - b
 
 
-# Function to multiply two numbers
 def multiply(a, b):
     return a * b
 
 
-# Function to divide two numbers
 def divide(a, b):
-    # Checking if the second number is zero
-    if b == 0:
+    try:
+        return a / b
+    except ZeroDivisionError:
         return "Cannot divide by zero."
-    return a / b
 
 
-# Taking two numbers
-num1 = 10
+num1 = 20
 num2 = 5
 
-print("\nCalculator Result")
-print("------------------")
+print("\n========== Calculator ==========")
+
 print("Addition       :", add(num1, num2))
 print("Subtraction    :", subtract(num1, num2))
 print("Multiplication :", multiply(num1, num2))
 print("Division       :", divide(num1, num2))
 
+# -------------------------------
+# Lists
+# -------------------------------
 
-# -----------------------------
-# List
-# -----------------------------
+students = [
+    "Dipak",
+    "Hari",
+    "Ram",
+    "Sita",
+    "Gita"
+]
 
-# List of student names
-students = ["Dipak", "Hari", "Ram", "Sita", "Gita"]
+print("\n========== Student List ==========")
 
-print("\nStudent Names")
-print("-------------")
+for index, name in enumerate(students, start=1):
+    print(f"{index}. {name}")
 
-# Printing each student's name
-for student in students:
-    print(student)
+# -------------------------------
+# Loops
+# -------------------------------
 
+print("\n========== Numbers 1-10 ==========")
 
-# -----------------------------
-# For Loop
-# -----------------------------
+for number in range(1, 11):
+    print(number)
 
-print("\nNumbers from 1 to 10")
-print("--------------------")
+print("\n========== Even Numbers ==========")
 
-# Printing numbers from 1 to 10
-for i in range(1, 11):
-    print(i)
+for number in range(2, 21, 2):
+    print(number)
 
+print("\n========== Odd Numbers ==========")
 
-# Printing even numbers
-print("\nEven Numbers")
-print("------------")
+for number in range(1, 20, 2):
+    print(number)
 
-for i in range(2, 21, 2):
-    print(i)
-
-
-# -----------------------------
+# -------------------------------
 # List Comprehension
-# -----------------------------
+# -------------------------------
 
-# Original list
 numbers = [1, 2, 3, 4, 5]
 
-# Creating another list with square values
-squared = [num ** 2 for num in numbers]
-
-print("\nOriginal Numbers :", numbers)
-print("Squared Numbers :", squared)
-
-
-# Creating a list of even numbers
+squares = [num ** 2 for num in numbers]
+cubes = [num ** 3 for num in numbers]
 even_numbers = [num for num in numbers if num % 2 == 0]
 
-print("Even Numbers :", even_numbers)
+print("\n========== List Comprehension ==========")
 
+print("Numbers :", numbers)
+print("Squares :", squares)
+print("Cubes   :", cubes)
+print("Even    :", even_numbers)
 
-# Finding the total of all numbers
-total = sum(numbers)
+# -------------------------------
+# Dictionary
+# -------------------------------
 
-print("Total of Numbers :", total)
+student_info = {
+    "Name": "Dipak",
+    "Age": 21,
+    "Faculty": "Computer Engineering"
+}
 
+print("\n========== Dictionary ==========")
 
-# End of the program
-print("\nProgram executed successfully.")
+for key, value in student_info.items():
+    print(f"{key}: {value}")
+
+# -------------------------------
+# Exception Handling
+# -------------------------------
+
+print("\n========== Exception Handling ==========")
+
+try:
+    number = int(input("Enter a number: "))
+    print("You entered:", number)
+except ValueError:
+    print("Invalid input! Please enter an integer.")
+
+# -------------------------------
+# File Handling
+# -------------------------------
+
+print("\n========== File Handling ==========")
+
+try:
+    with open("sample.txt", "w") as file:
+        file.write("Welcome to Python Programming!\n")
+        file.write("This file was created using Python.\n")
+
+    with open("sample.txt", "r") as file:
+        print(file.read())
+
+except Exception as error:
+    print("Error:", error)
+
+# -------------------------------
+# Built-in Functions
+# -------------------------------
+
+print("\n========== Built-in Functions ==========")
+
+print("Maximum :", max(numbers))
+print("Minimum :", min(numbers))
+print("Sum     :", sum(numbers))
+print("Length  :", len(numbers))
+
+# -------------------------------
+# Lambda Function
+# -------------------------------
+
+square = lambda x: x * x
+
+print("\nSquare of 8 :", square(8))
+
+# -------------------------------
+# Sorting
+# -------------------------------
+
+marks = [80, 65, 90, 55, 76]
+
+print("\n========== Sorting ==========")
+
+print("Original :", marks)
+print("Ascending:", sorted(marks))
+print("Descending:", sorted(marks, reverse=True))
+
+# -------------------------------
+# Program End
+# -------------------------------
+
+print("\n===================================")
+print("Program executed successfully.")
+print("===================================")
