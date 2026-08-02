@@ -88,6 +88,8 @@ Open the `index.html` file in any modern web browser.
 
 
 
+
+
 ### Backend
 
 Run the Python application using one of the following commands:
