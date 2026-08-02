@@ -110,6 +110,8 @@ python3 main.py
 
 ---
 
+
+
 ## 📸 Screenshots
 
 You can showcase your project by adding screenshots here.
